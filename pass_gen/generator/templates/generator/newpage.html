@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
     <body>
-        <div align="center">
-        <h1 align=center>Here is your password!!</h1>
-        <h1 align=center>{{mypass}}</h1>
-        <button onClick="window.location.reload()">Alternate Password</button>
-        <br>
-        <form action={% url 'mainpage' %}>
+        <div class='container-fluid' align='center'>
+        <h1 >Here is your password!!</h1>
+        <h1 >{{mypass}}</h1>
+        <button onClick="window.location.reload()" class='btn btn-primary'>Not This One!!</button>
         
-        <input type='submit' value='reset criteria' align=center>
+        <form action={% url 'mainpage' %}>
+            <br>
+        <input type='submit' value='reset criteria' class='btn btn-primary'>
         
         </form>
     </div>
